@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Galeria de imágenes</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Busqueda de gatos por categoria</h1>
+        <p><b>Selecciona la categoria y pulsa el botón para que aparezcan... <u>¡más GATOS!</u></b></p>
+        <label for="gatos">Elige una categoria:&nbsp;</label><select name="gatos" id="gato"></select>
+        &nbsp;&nbsp;
+        <button type="button" class="btn btn-info" id="boton">DAME GATOS</button>
+    </div>
+    <div class="container" id="error"></div>
+    <div class="container d-flex mt-3 p-3 align-items-center justify-content-center flex-wrap" id="gatos">
+    </div>
+
+    <div class="container d-flex mt-3 justify-content-center">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a id="anterior" class="page-link" href="#">Anterior</a></li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item"><a id="siguiente" class="page-link" href="#">Siguiente</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <input type="text" hidden id="numeropagina" value="1"></input>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
